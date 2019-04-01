@@ -1,4 +1,4 @@
-Set-up:
+# Set-up:
 1: Download the Hadoop 2.7.3 Package
   Command: wget https://archive.apache.org/dist/hadoop/core/hadoop-2.7.3/hadoop-2.7.3.tar.gz
   Command: tar -xvf hadoop-2.7.3.tar.gz
@@ -9,12 +9,14 @@ Set-up:
 4. Edit hadoop-env.sh and add the Java Path
 
 
-Command to execute:
+# Command to execute:
 1.Create jar of the java file
 2.sudo -u <username> <path_of_hadoop> jar <name_of_jar> <class_name_with_main_function> <HDFSinputFile> <HDFSoutputFile>
-Ex: sudo -u hduser /home/user/Downloads/hadoop-2.7.3/bin/hadoop jar abs.jar mapReduce hdfs://localhost:50007/input/sample.txt hdfs://localhost:50007/output
+```
+sudo -u hduser /home/user/Downloads/hadoop-2.7.3/bin/hadoop jar abs.jar mapReduce hdfs://localhost:50007/input/sample.txt hdfs://localhost:50007/output
+```
 
-
+# What is what?
 MapReduce is a computation that decomposes large manipulation jobs into individual tasks that can be executed in parallel across a cluster of servers. The results of tasks can be joined together to compute final results.
 
 Driver
