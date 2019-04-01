@@ -2,16 +2,21 @@
 1: Download the Hadoop 2.7.3 Package
   Command: wget https://archive.apache.org/dist/hadoop/core/hadoop-2.7.3/hadoop-2.7.3.tar.gz
   Command: tar -xvf hadoop-2.7.3.tar.gz
+  
 2: Add the Hadoop Path in the bash file (/home/user/.bashrc)
   Command to Check Installation: hadoop version
+  
 3: Edit the Hadoop Configuration files.
   Command: cd hadoop-2.7.3/etc/hadoop/
+  
 4. Edit hadoop-env.sh and add the Java Path
 
 
 # Command to execute:
 1.Create jar of the java file
+
 2.sudo -u <username> <path_of_hadoop> jar <name_of_jar> <class_name_with_main_function> <HDFSinputFile> <HDFSoutputFile>
+  
 ```
 sudo -u hduser /home/user/Downloads/hadoop-2.7.3/bin/hadoop jar abs.jar mapReduce hdfs://localhost:50007/input/sample.txt hdfs://localhost:50007/output
 ```
